@@ -1,5 +1,5 @@
-https://leetcode.com/problems/3sum-with-multiplicity/
-```
+# https://leetcode.com/problems/3sum-with-multiplicity/
+
 class Solution:
     def threeSumMulti(self, arr, target):
         c = Counter(arr)
@@ -15,4 +15,4 @@ class Solution:
                 ans += c[i]*(c[i]-1)*(c[i]-2)//6
                 
         return ans % M 
-        ```
+        
