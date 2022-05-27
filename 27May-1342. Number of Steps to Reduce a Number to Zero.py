@@ -1,9 +1,3 @@
 class Solution:
-    def numberOfSteps (self, num: int) -> int:
-        
-        ans = 0
-        
-        while num:
-            ans += (num & 1) + 1
-            num >>= 1
-        return ans-1
+    def numberOfSteps(self, num: int) -> int:
+        return bin(num)[2:].count("1") * 2 + bin(num)[2:].count("0") - 1
